@@ -13,7 +13,7 @@ caps = CONFIG['common_caps'].merge(CONFIG['browser_caps'][TASK_ID])
 port="https://"
 user=(ENV['LT_USERNAME'])
 key=(ENV['LT_ACCESS_KEY'])
-url=port+user+":"+key+(CONFIG['server'])
+url=port+user+":"+key+"@"+(CONFIG['server'])
 desired_caps = {
   caps: caps,
   appium_lib: {
