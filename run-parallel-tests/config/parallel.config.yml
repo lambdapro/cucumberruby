@@ -1,4 +1,4 @@
-server: "mudassars:bzxOaqKQcMslHb9gCJbNUXm7vDJn6WAbainToGdJlwiaEWKwEy@beta-hub.lambdatest.com"
+server: "beta-hub.lambdatest.com/wd/hub"
 
 common_caps:
   "projectName": "LT"

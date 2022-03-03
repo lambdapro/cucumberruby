@@ -10,14 +10,19 @@ CONFIG = YAML.load(File.read(File.join(File.dirname(__FILE__), "../../config/#{C
 
 caps = CONFIG['common_caps'].merge(CONFIG['browser_caps'][TASK_ID])
 
+port="https://"
+user=(ENV['LT_USERNAME'])
+key=(ENV['LT_ACCESS_KEY'])
+url=port+user+":"+key+(CONFIG['server'])
 desired_caps = {
   caps: caps,
   appium_lib: {
-    server_url: "https://#{CONFIG['server']}/wd/hub"
+    server_url: url
   }
 }
 
 begin
+  puts url
   $appium_driver = Appium::Driver.new(desired_caps, true)
   $driver = $appium_driver.start_driver
 rescue Exception => e
