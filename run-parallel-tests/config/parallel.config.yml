@@ -4,15 +4,15 @@ common_caps:
   "projectName": "LT"
   "build": "lambdatest-build"
   "isRealMobile": true
-  "platform" : "Android"
+  "platformName" : "Android"
   "app" : "lt://APP10020521646306620332595"
 
 browser_caps:
   -
-    "deviceName": "Galaxy S21"
-    "platformVersion": "11"
+    "deviceName": "Google Pixel 3"
+    "platformVersion": "10"
     "name": "parallel_test_1"
   -
-    "deviceName": "Google Pixel 6"
-    "platformVersion": "12"
+    "deviceName": "Galaxy A12"
+    "platformVersion": "10"
     "name": "parallel_test_2"
